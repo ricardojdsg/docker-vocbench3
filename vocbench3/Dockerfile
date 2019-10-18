@@ -5,7 +5,7 @@ RUN apk update && apk upgrade && apk add --no-cache curl
 WORKDIR /app/vocbench3
 
 ENV VB_VER=6.0
-ENV VB_WEB_VER=6.0.0
+ENV VB_WEB_VER=6.0.1
 
 RUN curl -L https://bitbucket.org/art-uniroma2/vocbench3/downloads/vocbench3-${VB_WEB_VER}_full.zip -o vocbench3_full.zip \
   && unzip vocbench3_full.zip -d /app/vocbench3 \
