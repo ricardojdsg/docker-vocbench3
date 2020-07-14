@@ -6,7 +6,7 @@ services:
     image: ricardojdsg/vocbench3:latest
     build:
         context: .
-        dockerfile: ./Dockerfile
+        dockerfile: ./vocbench3/Dockerfile
     environment:     
       - JAVA_MAX_MEM=512M
     volumes:
