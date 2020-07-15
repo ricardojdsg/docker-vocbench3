@@ -37,7 +37,7 @@ cd docker-vocbench3/
 3. Create docker services with docker-compose file
 - have previously installed docker and docker-compose and login in docker hub
  ```bash
- docker@docker:~/smartinv$ docker-compose up -d
+ docker@docker:~/docker-vocbench3$ docker-compose up -d
 Creating network "docker-vocbench3_default" with the default driver
 Building vocbench3
 Step 1/10 : FROM openjdk:8-jdk-alpine
@@ -45,7 +45,7 @@ Step 1/10 : FROM openjdk:8-jdk-alpine
 .
 .
 Successfully tagged ricardojdsg/vocbench3:latest
-```
+ ```
 
 - List the docker images
  ```bash 
@@ -65,13 +65,13 @@ vocbench3   /bin/sh -c sh /app/vocbenc ...   Up      0.0.0.0:1979->1979/tcp
 
  ```
 
-```bash
+ ```bash
  docker30@docker30:~/docker-vocbench3$ docker ps -a
 CONTAINER ID        IMAGE                          COMMAND                  CREATED             STATUS                   PORTS                    NAMES
 5f83db327953        ricardojdsg/vocbench3:latest   "/bin/sh -c 'sh /app…"   2 minutes ago       Up About a minute        0.0.0.0:1979->1979/tcp   vocbench3
 8f6e0234a274        bbf22e545fb1                   "/bin/sh -c 'curl -L…"   2 hours ago         Exited (7) 2 hours ago                            exciting_mccarthy
 
-  ```
+ ```
   
 4. Verify web applications
 - verify web applications on port 1979 vocbench3 in http://IP_HOST:1979/vocbench3/
