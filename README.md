@@ -31,7 +31,7 @@ cd docker-vocbench3/
  ```bash 
  docker@docker:~/docker-vocbench3$ docker images
  REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
- ricardojdsg/docker-vocbench3 latest              c220712e7e8d        35 minutes ago      256MB
+ ricardojdsg/docker-vocbench3 latest              4ae25eef2fe6        28 minutes ago      342MB
 
  ```
 3. Create docker services with docker-compose file
